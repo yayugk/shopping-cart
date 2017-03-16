@@ -1,4 +1,14 @@
 # shopping-cart
+This is a website application which allows user to search product information, place order and other shopping operation.
+
+Core section
+1.   	Users could create an account and log in to the website with it.
+2.   	Users could search the product based on the name, category, and price.
+3.   	Users could add desired products into the cart and modify the cart.
+4.   	Users could add items into the wish list.
+5.   	Users could check out the cart and place the order.
+
+Instruction
 1.	run npm install 
 2.	run node ./seed/product-seeder to add product information into database
 3.	run npm start to start the server
