@@ -1,0 +1,30 @@
+<div>
+    <h1>Post A Product</h1>
+    <div>
+        {{#if errorMessage}}
+        <div class="alert alert-danger">{{errorMessage}}</div>
+        {{/if}}
+    </div>
+    <form action="/product/post" method="post" id='inputForm'>
+        <div class="col-xs-12">
+            <label for="imageInput">Image Path<br><input class="form-control" id="imageInput" type="text" name ="imageInput"></label><br>
+        </div>
+        <div class="col-xs-12">
+            <label for="titleInput">Title<br><input class="form-control" id="titleInput" name ="titleInput"></label><br>
+        </div>
+        <div class="col-xs-12">
+            <label for="labelInput">label<br><input class="form-control" id="labelInput" name ="labelInput"></label><br>
+        </div>
+        <div class="col-xs-12">
+            <label for="descriptionInput">Description<br><textarea class="form-control" id="descriptionInput" name ="descriptionInput"></textarea></label><br>
+        </div>
+        <div class="col-xs-12">
+            <label for="priceInput">Price<br><input class="form-control" id="priceInput" type="number" min="1" name ="priceInput"></label><br>
+        </div>
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-primary">Post</button>
+            <!--        <input class="btn btn-success" id="submitButton" type="submit"/>-->
+        </div>
+    </form>
+
+</div>
